@@ -8,3 +8,7 @@ I need to get without leaving the game.
 
 ## Dependencies
 
+beautifulsoup4==4.6.3
+bs4==0.0.1
+requests==2.19.1
+urllib3==1.23
