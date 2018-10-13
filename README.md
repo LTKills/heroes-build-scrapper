@@ -14,3 +14,10 @@ pip install bs4
 ## Usage
 
 ## Contributing
+
+* If you find an issue and would like to contribute comment on the issue asking to be assigned to it.
+* Make a separate pull request for each individual issue.
+* Every pull request and commit should have a descriptive title and should properly explain its contents.
+* Check your spelling and grammar
+* Add your nick in the PLAYERS.md file according to the mentioned format 
+
