@@ -10,10 +10,13 @@ talent I need to get without leaving the game.
 
 Requirements
 ------------
+-   Python 3.x
 
--   Python 3 and up
+-   setuptools==28.8.0
 
--   Beautiful Soup 4
+-   requests==2.10.0
+
+-   beautifulsoup4==4.6.3
 
 Installation
 ------------
