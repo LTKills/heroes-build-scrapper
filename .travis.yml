@@ -1,1 +1,5 @@
 language: python
+jobs:
+  include:
+    - stage: install
+      script: python setup.py install
