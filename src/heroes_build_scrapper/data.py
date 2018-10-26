@@ -32,7 +32,7 @@ def update_heroes_list():
 def update_all_builds():
     '''Updates all builds of all heroes (calls update_builds for all heroes)
     '''
-    print('Updating Heroes')
+    print('Starting full heroes build update')
 
     with open('data/heroes.json', 'r') as fp:
         heroes = json.load(fp)
