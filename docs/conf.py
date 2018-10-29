@@ -66,7 +66,11 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['.build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = [
+    '.build',
+    'Thumbs.db',
+    '.DS_Store'
+]
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
@@ -130,20 +134,26 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, 'heroes_build_scrapper.tex', 'heroes\\_build\\_scrapper Documentation',
-     'Gabriel Cruz', 'manual'),
-]
+latex_documents = [(
+    master_doc,
+    'heroes_build_scrapper.tex',
+    'heroes\\_build\\_scrapper Documentation',
+    'Gabriel Cruz',
+    'manual'
+)]
 
 
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'heroes_build_scrapper', 'heroes_build_scrapper Documentation',
-     [author], 1)
-]
+man_pages = [(
+    master_doc,
+    'heroes_build_scrapper',
+    'heroes_build_scrapper Documentation',
+    [author],
+    1
+)]
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -151,11 +161,15 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'heroes_build_scrapper', 'heroes_build_scrapper Documentation',
-     author, 'heroes_build_scrapper', 'One line description of project.',
-     'Miscellaneous'),
-]
+texinfo_documents = [(
+    master_doc,
+    'heroes_build_scrapper',
+    'heroes_build_scrapper Documentation',
+    author,
+    'heroes_build_scrapper',
+    'One line description of project.',
+    'Miscellaneous'
+)]
 
 
 # -- Options for Epub output -------------------------------------------------
