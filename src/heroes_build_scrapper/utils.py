@@ -1,9 +1,9 @@
-
 # Utilities' library
 import unicodedata
 import requests
 import json
 from bs4 import BeautifulSoup
+
 
 def get_soup(link):
     '''Gets a link, downloads page and gets soup
@@ -34,14 +34,14 @@ def print_build(build, title):
 
 
 def print_hero_builds(hero):
-    string = ''
+    string = '-------------------------------- '
+    frame = ' --------------------------------' + '\n'
 
-    string += '-------------------------------- ' + hero + ' --------------------------------' + '\n'
+    string += hero + frame
     builds, titles = load_builds(hero)
     for build, title in zip(builds, titles):
         string += print_build(build, title)
         string += '\n'
-
     return string
 
 
@@ -52,7 +52,7 @@ def print_all_builds():
         print_hero_builds(hero)
 
 
-def normalize_hero_name(hero):
+def normalize_name(hero):
     '''Clears string so that fits link'''
     hero = unicodedata.normalize('NFD', hero).encode('ascii', 'ignore')
     hero = str(hero.decode('utf-8'))
@@ -60,5 +60,3 @@ def normalize_hero_name(hero):
     hero = hero.replace('.', '')
     hero = hero.replace('\'', '')
     return hero.lower()
-
-
