@@ -14,3 +14,4 @@ The format here is
 * [Isaac Lim](https://github.com/theIsaacLim)
 * [Andrew Hill](https://github.com/astroengisci)
 * [Guillermo Castellano](https://github.com/guillearch)
+* [Allan Gonçalves](https://github.com/allangoncalves)

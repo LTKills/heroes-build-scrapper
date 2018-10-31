@@ -3,6 +3,7 @@
 
 import json
 import requests
+from tqdm import tqdm
 from bs4 import BeautifulSoup
 from .scrapping import update_hero_builds
 from .utils import get_soup, normalize_hero_name
@@ -39,5 +40,8 @@ def update_all_builds():
     with open('data/heroes.json', 'r') as fp:
         heroes = json.load(fp)
 
-    for hero in heroes:
+    bar = tqdm(heroes, bar_format='{l_bar}{bar}{elapsed}')
+    for hero in bar:
+        bar.set_description("{0:^16}".format(hero))
         update_hero_builds(hero)
+
