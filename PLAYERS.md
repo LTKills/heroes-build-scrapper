@@ -13,4 +13,5 @@ The format here is
 * [Nashi#2664](https://github.com/Nikoleta-v3)
 * [Isaac Lim](https://github.com/theIsaacLim)
 * [Andrew Hill](https://github.com/astroengisci)
+* [Guillermo Castellano](https://github.com/guillearch)
 * [Allan Gonçalves](https://github.com/allangoncalves)
